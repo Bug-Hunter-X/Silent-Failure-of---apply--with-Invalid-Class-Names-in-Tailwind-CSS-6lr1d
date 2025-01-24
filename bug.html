@@ -1,0 +1,7 @@
+This error occurs when using Tailwind CSS with the `@apply` directive and an invalid class name is applied to an element.  For example:
+
+```html
+<div class="@apply invalid-class"></div>
+```
+
+Tailwind will not throw an error during compilation, but the `invalid-class` won't be applied, and your styles will be incorrect.  This can be difficult to debug because there's no clear error message.
