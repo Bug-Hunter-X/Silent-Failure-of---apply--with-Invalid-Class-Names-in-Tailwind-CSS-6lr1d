@@ -1,0 +1,11 @@
+To solve this, ensure that all class names used with `@apply` are defined in your Tailwind configuration or imported correctly.  Thoroughly check your spelling and make use of your IDE's autocompletion features to minimize the risk of typos.
+
+```html
+<div class="bg-blue-500 p-4">This div has the expected styles applied.</div>
+```
+
+Here's a better example demonstrating correct usage.  Note that you should use classes that are actually part of your Tailwind configuration.
+
+Using a linter or a strict CSS-in-JS framework helps catch this sort of error early. 
+
+Also, consider using PurgeCSS or another CSS optimization tool to remove unused styles from your final CSS output. This helps reduce the potential for using non-existent classes accidentally.
